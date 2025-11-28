@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+.nyc_output/
+coverage/
+
+# Build outputs
+dist/
+build/
+tmp/
+temp/
+
+# Nodemon
+nodemon-debug.log
+
+# Lockfiles (opcional - mantenha o que usa)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# MySQL dumps
+*.sql
+*.dump
