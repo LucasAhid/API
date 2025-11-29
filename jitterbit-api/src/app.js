@@ -13,6 +13,9 @@ app.use("/", authRoutes);
 const { swaggerUi, swaggerSpec } = require("./swagger");
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+app.get('/.well-known/appspecific/com.chrome.devtools.json', (req, res) => {
+  res.status(204).send(); // retorna sem conteúdo, sem erro
+});
 
 const port = process.env.PORT || 3000;
 
